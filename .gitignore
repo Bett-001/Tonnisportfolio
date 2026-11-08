@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Local backups of replaced images and styles (not part of the site)
+assets/_old/
+.preview-ignore.png
+
+# Private notes for the AI assistant (kept locally)
+CLAUDE.md
+
+# Editor / tooling
+.vscode/
+*.log
