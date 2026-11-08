@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tonny Bett — Full-Stack Software Developer</title>
+  <meta name="description" content="Portfolio of Tonny Bett — full-stack developer building React apps, Flask APIs, AI automation and trading technology.">
+  <meta name="theme-color" content="#1a1818">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Tonny Bett — Full-Stack Software Developer">
+  <meta property="og:description" content="Portfolio of Tonny Bett — full-stack developer building React apps, Flask APIs, AI automation and trading technology.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a1818'/%3E%3Ctext x='16' y='23' font-size='19' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23f8f6f3'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=EB+Garamond:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    document.documentElement.classList.add('js');
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Opening intro: the doors' colours stack up while the page loads, then slide apart (main.js initLoader) -->
+  <div class="loader" id="loader" aria-hidden="true"></div>
+  <noscript><style>.loader { display: none !important; }</style></noscript>
+
+  <header class="site-header" id="header">
+    <div class="wrap header-in">
+      <nav class="nav" id="nav" aria-label="Main"></nav>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <div class="time-pill">
+        <span class="tp-label">Local time</span>
+        <b data-clock-time>--:--</b>
+        <i class="tp-dot" aria-hidden="true"></i>
+        <span class="tp-date" data-clock-date></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Pull cord: physics rope (js/cord.js). Pull it down, tap it or press Enter to switch light / dark -->
+  <div class="cord" id="cord">
+    <button class="cord-hit" id="cord-hit" type="button" role="switch" aria-checked="false" aria-label="Pull the cord to switch to dark mode"></button>
+  </div>
+
+  <main id="main" tabindex="-1"></main>
+  <footer class="site-footer" id="footer"></footer>
+
+  <div class="float-bar" id="float-bar" aria-label="Quick contact">
+    <span class="fb-label">Local time</span>
+    <b data-clock-time>--:--</b>
+    <button class="fb-hire" type="button" data-open-contact>Hire me <span aria-hidden="true">→</span></button>
+  </div>
+
+  <dialog id="contact" class="modal" aria-labelledby="contact-title">
+    <div class="modal-card">
+      <button class="modal-x" type="button" data-close aria-label="Close">✕</button>
+      <div id="contact-body"></div>
+    </div>
+  </dialog>
+
+  <dialog id="ability" class="modal" aria-labelledby="ability-title">
+    <div class="modal-card">
+      <button class="modal-x" type="button" data-close aria-label="Close">✕</button>
+      <div id="ability-body"></div>
+    </div>
+  </dialog>
+
+  <script src="js/content.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cord.js"></script>
+  <script src="js/card.js"></script>
+</body>
+</html>
