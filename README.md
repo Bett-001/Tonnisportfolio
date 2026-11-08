@@ -10,7 +10,7 @@ My personal portfolio as a full-stack software developer in Kenya. It's built wi
 - **Hero:** a flip-card that cycles through my roles, and a portrait where a spotlight under the cursor reveals the colour photo.
 - **Pull-cord light/dark switch:** a physics rope drawn on a canvas. You can swing it, fling it, or pull it to change the theme.
 - **Skill doors:** four doors, one per discipline (Frontend, Backend & APIs, AI & Automation, Trading Tech). Hovering a door opens it and shows what's behind it; clicking walks you through to that skill's projects.
-- **Projects:** live products (MQTradePro, Imara Logic) and React apps (Bot Battlr, Job Finder), shown with screenshots and links.
+- **Projects:** live products (Clotz Hub, MQTradePro, Imara Logic) and React apps (Bot Battlr, Job Finder), shown with screenshots and links.
 - **My story:** a scrolling timeline of my work and education.
 - **3D ability card:** a holographic trading card you can tilt, drag and flip.
 - **Contact:** a 5-step "Hire me" form that opens your own email app with the message filled in.

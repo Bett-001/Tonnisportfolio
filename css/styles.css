@@ -759,3 +759,4 @@ html.intro { overflow: hidden; }
   .story-side-in { padding-bottom: 30px; background: linear-gradient(var(--bg) calc(100% - 22px), color-mix(in srgb, var(--bg) 0%, transparent)); }
   .t-summary { font-size: 16px; }
 }
+.pc-link + .pc-link { margin-left: 10px; }

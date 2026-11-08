@@ -233,6 +233,7 @@
           ${(p.tags || []).length ? `<ul class="chips small">${p.tags.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
           ${p.note ? `<p class="pc-note"><span class="dot"></span>${esc(p.note)}</p>` : ''}
           ${p.link ? `<a class="btn btn-ghost pc-link" href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.linkLabel || 'Live demo')} ↗</a>` : ''}
+          ${p.code ? `<a class="btn btn-ghost pc-link" href="${esc(p.code)}" target="_blank" rel="noopener">View code ↗</a>` : ''}
         </div>
         <div class="monitor" aria-hidden="${p.image ? 'false' : 'true'}">
           <div class="m-screen">${p.image

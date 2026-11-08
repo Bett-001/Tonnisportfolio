@@ -58,8 +58,21 @@ window.SITE = {
       blurb: 'Responsive React applications.',
       lead: 'Responsive, component-driven React applications with clean state management and smooth API integration.',
       points: ['Reusable React components', 'State management & props flow', 'API integration', 'Responsive, interactive UI', 'Deployment on Vercel & Netlify'],
-      tools: ['React.js', 'JavaScript (ES6+)', 'HTML5', 'CSS3', 'JSON Server', 'Vercel', 'Netlify'],
+      tools: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'Tailwind CSS', 'Vite', 'Supabase', 'HTML5', 'CSS3', 'Vercel', 'Netlify'],
       projects: [
+        {
+          kind: 'Full-stack marketplace · Live', title: 'Clotz Hub', subtitle: 'Kenya’s verified fashion marketplace',
+          desc: 'A multi-store marketplace where shoppers browse verified clothing shops for men, women and kids, fill one cart and check out with M-Pesa or cash, with delivery or pickup.',
+          bullets: [
+            'Store owners get their own storefront: logo, banner, location and opening hours',
+            'Seller dashboard for products (photos, sizes, colours, stock) and orders from new to delivered',
+            'Payments go straight to each seller’s own M-Pesa till or paybill',
+            'Sign-in, cart and data on Supabase (PostgreSQL, auth, storage)',
+            'Typed end to end in TypeScript, with forms validated by React Hook Form and Zod',
+          ],
+          tags: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'TanStack Query', 'M-Pesa'],
+          link: 'https://clotzhub.vercel.app/', code: 'https://github.com/Bett-001/clothez-connect', image: 'assets/work/clotzhub.jpg',
+        },
         {
           kind: 'React web app', title: 'Bot Battlr', subtitle: 'Battle-bot collection manager',
           desc: 'Users build their own army by enlisting, releasing or permanently removing bots from a live collection.',
