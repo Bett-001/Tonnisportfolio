@@ -184,8 +184,11 @@
           <li class="t-item${i === 0 ? ' active' : ''}" data-i="${i}">
             ${e.period ? `<p class="mono t-period">${esc(e.period)}</p>` : ''}
             <h3>${esc(e.title)}</h3>
-            <p class="t-org">${esc(e.org)}</p>
+            <p class="t-org">${esc(e.org)}${e.type ? `<span class="t-type">${esc(e.type)}</span>` : ''}</p>
+            ${e.summary ? `<p class="t-summary">${esc(e.summary)}</p>` : ''}
             ${(e.bullets || []).length ? `<ul class="t-bullets">${e.bullets.map((b) => `<li>${esc(b)}</li>`).join('')}</ul>` : ''}
+            ${(e.tags || []).length ? `<ul class="t-tags" aria-label="Tools used">${e.tags.map((t) => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}
+            ${e.link ? `<a class="t-link" href="${esc(e.link.href)}" target="_blank" rel="noopener">${esc(e.link.label)} <span aria-hidden="true">↗</span></a>` : ''}
           </li>`).join('')}
         </ol>
       </div>

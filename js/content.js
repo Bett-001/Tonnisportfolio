@@ -152,10 +152,57 @@ window.SITE = {
   // Newest first. `year` is the big number shown while that entry is active —
   // add your real years and dates here (leave '' to show the chapter number).
   story: [
-    { year: '', period: '', title: 'Founder & Lead Software Engineer', org: 'MQTradePro', bullets: ['Founded and built a subscription trading platform end to end.', 'Own the architecture, product strategy, frontend, APIs and deployments.'] },
-    { year: '', period: '', title: 'Full-Stack Developer', org: 'Imara Logic', bullets: ['Built frontends, AI chatbots and WhatsApp automation for an AI business platform.', 'Integrated Meta Business messaging and shipped to production.'] },
-    { year: '', period: '', title: 'Software Engineering', org: 'Moringa School, Kenya', bullets: ['Intensive training in React, Flask, REST APIs and SQL databases.', 'Shipped projects including Bot Battlr, Job Finder and the Superheroes API.'] },
-    { year: '', period: '', title: 'BSc Software Development', org: 'KCA University', bullets: ['Degree in software development: programming, systems and software engineering.'] },
+    // year/period: TODO Tonny: add the real years (e.g. year: '2025', period: '2025 – Present').
+    {
+      year: '', period: '',
+      title: 'Founder & Lead Software Engineer', org: 'MQTradePro', type: 'Founder · Trading technology',
+      summary: 'I founded MQTradePro and built it end to end: a subscription platform that gives traders live market signals, risk tools and strategies.',
+      bullets: [
+        'Built the subscription platform: accounts, pricing tiers and paid access to signals and tools.',
+        'Live trading signals across Forex, gold, indices and crypto, with a public track-record page.',
+        'Designed “Risk Guardian”, which sizes every signal to the subscriber’s own account, plus breach alerts for prop-firm challenges.',
+        'Sell invite-only TradingView Pine Script strategies and indicators, per script.',
+        'Own the architecture, product strategy, frontend, APIs, deployments and support.',
+      ],
+      tags: ['React', 'Python', 'Flask', 'SQL', 'MetaTrader 5', 'Pine Script'],
+      link: { label: 'mqtradepro.com', href: 'https://mqtradepro.com/' },
+    },
+    {
+      year: '', period: '',
+      title: 'Full-Stack Developer', org: 'Imara Logic', type: 'AI business automation · Nairobi',
+      summary: 'Imara Logic gives businesses one shared WhatsApp inbox, with AI answering the repetitive questions so teams can focus on real work.',
+      bullets: [
+        'Built frontends and AI chatbots that answer customers instantly.',
+        'Integrated WhatsApp, Facebook and Instagram messaging through Meta Business (Imara is a Meta Tech Provider on the WhatsApp Business API).',
+        'Built lead-capture workflows that turn chats into sales.',
+        'Shipped to production and kept the platform running, used by teams including Fly748 and TradePilot.',
+      ],
+      tags: ['JavaScript', 'Python', 'WhatsApp Business API', 'Meta Business', 'AI chatbots'],
+      link: { label: 'imaralogic.co.ke', href: 'https://www.imaralogic.co.ke/' },
+    },
+    {
+      year: '', period: '',
+      title: 'Software Engineering Programme', org: 'Moringa School, Kenya', type: 'Intensive full-stack training',
+      summary: 'A project-based programme covering the full stack, from Python and SQL to React and REST APIs.',
+      bullets: [
+        'Python: object-oriented programming, data structures, testing with pytest, and SQL with the SQLAlchemy ORM and Alembic migrations.',
+        'Backend: REST APIs with Flask, Flask-RESTful and Marshmallow, plus authentication, sessions and authorisation.',
+        'Frontend: React apps including Bot Battlr and Job Finder, deployed on Vercel and Netlify.',
+        'Team capstone: SkillSwap Hub, a peer-to-peer learning platform (React + Python API) with live Google Meet sessions, built in a team of five.',
+        'Hotel Management System: a Python command-line app for rooms, guests and bookings.',
+      ],
+      tags: ['Python', 'Flask', 'SQLAlchemy', 'React', 'SQL', 'Git'],
+    },
+    {
+      year: '', period: '',
+      title: 'BSc Software Development', org: 'KCA University, Nairobi', type: 'Degree · Currently studying',
+      summary: 'Studying for a degree in software development while building real products.',
+      bullets: [
+        'Coursework in programming, systems analysis and software engineering.',
+        'Current unit: Web Technologies and Internet Applications (HTML, CSS, Git/GitHub and web publishing).',
+      ],
+      tags: ['Software engineering', 'Web technologies'],
+    },
   ],
 
   // ---- "My ability card" pop-up -------------------------------------------

@@ -743,3 +743,19 @@ html.intro { overflow: hidden; }
   .ld-top span:last-child { display: none; }
   .ld-bar { width: 34vw; }
 }
+
+/* ---- Story entries: type line, summary, tech tags, link ------------------- */
+.t-org { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.t-type { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: color-mix(in srgb, var(--ink) 55%, transparent); }
+.t-summary { margin-top: 14px; max-width: 52ch; font-size: 16.5px; line-height: 1.55; color: color-mix(in srgb, var(--ink) 82%, transparent); }
+.t-bullets { max-width: 54ch; }
+.t-bullets li { line-height: 1.5; }
+.t-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+.t-tags li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 13px; color: color-mix(in srgb, var(--ink) 75%, transparent); }
+.t-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 15px; font-weight: 500; border-bottom: 1px solid currentColor; padding-bottom: 2px; transition: opacity .2s; }
+.t-link:hover { opacity: .7; }
+@media (max-width: 960px) {
+  /* pinned story header: solid down past the counter so entries never show through it */
+  .story-side-in { padding-bottom: 30px; background: linear-gradient(var(--bg) calc(100% - 22px), color-mix(in srgb, var(--bg) 0%, transparent)); }
+  .t-summary { font-size: 16px; }
+}
