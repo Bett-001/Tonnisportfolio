@@ -110,7 +110,7 @@
           </div>
         </div>
         <figure class="portrait">
-          <img src="${esc(S.portrait)}" alt="${esc(S.portraitAlt)}" width="1206" height="943" fetchpriority="high">
+          <img src="${esc(portraitSrc())}" data-portrait alt="${esc(S.portraitAlt)}" width="1206" height="943" fetchpriority="high">
           ${S.portraitReveal ? `<img class="portrait-reveal" src="${esc(S.portraitReveal)}" alt="" aria-hidden="true" width="1206" height="943">` : ''}
           <button class="chip" type="button" data-open-ability>${esc(S.ability.title)}</button>
         </figure>
@@ -607,6 +607,10 @@
 
   // ---- Theme + pull cord ----------------------------------------------------
   const cord = $('#cord-hit'); // the switch button riding on the rope's knob (js/cord.js)
+  // the hero photo has a dark-mode version with a dimmer background halo
+  function portraitSrc() {
+    return document.documentElement.dataset.theme === 'dark' && S.portraitDark ? S.portraitDark : S.portrait;
+  }
   function setTheme(theme) {
     if (theme === 'dark') document.documentElement.dataset.theme = 'dark';
     else delete document.documentElement.dataset.theme;
@@ -615,6 +619,10 @@
     cord.setAttribute('aria-checked', String(dark));
     cord.setAttribute('aria-label', dark ? 'Pull the cord to switch to light mode' : 'Pull the cord to switch to dark mode');
     $('meta[name="theme-color"]').setAttribute('content', dark ? '#141212' : '#1a1818');
+    $$('img[data-portrait]').forEach((img) => {
+      const src = portraitSrc();
+      if (img.getAttribute('src') !== src) img.setAttribute('src', src);
+    });
   }
   const toggleTheme = () => setTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
   setTheme(document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');

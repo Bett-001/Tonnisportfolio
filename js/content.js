@@ -27,6 +27,8 @@ window.SITE = {
   // Cut-out portrait (transparent PNG works best). Drop yours in /assets and
   // change the path, e.g. 'assets/portrait.png'.
   portrait: 'assets/portrait.png',
+  // Dark-mode version: same photo with the gray background dimmed so it doesn't glow on the dark page.
+  portraitDark: 'assets/portrait-dark.png',
   // Colour photo with a wider soft fade of its background, revealed in a spotlight under the cursor ('' to turn off).
   portraitReveal: 'assets/portrait-reveal.png',
   portraitAlt: 'Portrait of Tonny Bett',
