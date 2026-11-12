@@ -170,6 +170,7 @@
           <div class="story-side-in">
             <p class="eyebrow"><span class="dot"></span>${esc(S.headings.storyKicker)}</p>
             <h2 id="story-h">${esc(S.headings.story)}</h2>
+            ${(S.interests || []).length ? `<p class="story-interests"><span class="mono">Interests</span> ${S.interests.map(esc).join(' · ')}</p>` : ''}
             <p class="big-year" id="story-year" aria-hidden="true"><span>${esc(yr(first, 0))}</span></p>
             <p class="mono story-period" id="story-period">${esc(first.period)}</p>
             <div class="story-count" aria-hidden="true">
@@ -551,12 +552,16 @@
     closeMenu();
     const path = location.hash.replace(/^#\/?/, '').replace(/\/$/, '');
     const main = $('#main');
+    main.classList.remove('plain'); // the plain-HTML version is replaced by the interactive one
     let scrollTarget = null;
 
-    if (path === '' || path === 'home' || path === 'about' || path === 'doors') {
+    if (['', 'home', 'about', 'doors', 'skills', 'projects', 'contact', 'contact-me'].includes(path)) {
       renderHome(main);
       document.title = S.siteTitle;
+      // links from the plain-HTML version of the page (#skills, #projects, #contact) land on the matching part
       if (path === 'about' || path === 'doors') scrollTarget = path;
+      if (path === 'skills' || path === 'projects') scrollTarget = 'doors';
+      if (path === 'contact' || path === 'contact-me') setTimeout(() => openContact(), 300);
     } else if (path === 'legal') {
       renderLegal(main);
       document.title = `Privacy & credits — ${S.name}`;

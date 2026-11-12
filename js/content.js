@@ -28,7 +28,9 @@ window.SITE = {
   // change the path, e.g. 'images/portrait.png'.
   portrait: 'images/portrait.png',
   // Dark-mode version: same photo with the gray background dimmed so it doesn't glow on the dark page.
-  portraitDark: 'images/portrait-dark.png',
+  // Personal interests (About me). TODO Tonny: change these to your real interests.
+  interests: ['Financial markets & algorithmic trading', 'AI & automation', 'Building products for Kenyan businesses', 'Learning new tech'],
+  portraitDark:'images/portrait-dark.png',
   // Colour photo with a wider soft fade of its background, revealed in a spotlight under the cursor ('' to turn off).
   portraitReveal: 'images/portrait-reveal.png',
   portraitAlt: 'Portrait of Tonny Bett',

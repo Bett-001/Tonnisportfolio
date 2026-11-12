@@ -10,11 +10,12 @@
   <meta property="og:title" content="Tonny Bett — Full-Stack Software Developer">
   <meta property="og:description" content="Portfolio of Tonny Bett — full-stack developer building React apps, Flask APIs, AI automation and trading technology.">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a1818'/%3E%3Ctext x='16' y='23' font-size='19' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23f8f6f3'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3Crect%20width='32'%20height='32'%20rx='8'%20fill='%231a1818'/%3E%3Ctext%20x='16'%20y='23'%20font-size='19'%20font-family='Arial'%20font-weight='700'%20text-anchor='middle'%20fill='%23f8f6f3'%3ET%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=EB+Garamond:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <noscript><style>.loader, .float-bar, .cord, .time-pill, .menu-btn { display: none !important; }</style></noscript>
   <script>
     document.documentElement.classList.add('js');
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
@@ -25,11 +26,17 @@
 
   <!-- Opening intro: the doors' colours stack up while the page loads, then slide apart (main.js initLoader) -->
   <div class="loader" id="loader" aria-hidden="true"></div>
-  <noscript><style>.loader { display: none !important; }</style></noscript>
 
   <header class="site-header" id="header">
     <div class="wrap header-in">
-      <nav class="nav" id="nav" aria-label="Main"></nav>
+      <!-- Plain links; js/main.js replaces them with the skill-door navigation when JavaScript runs -->
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact-me">Contact</a>
+      </nav>
       <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
       <div class="time-pill">
         <span class="tp-label">Local time</span>
@@ -45,10 +52,136 @@
     <button class="cord-hit" id="cord-hit" type="button" role="switch" aria-checked="false" aria-label="Pull the cord to switch to dark mode"></button>
   </div>
 
-  <main id="main" tabindex="-1"></main>
-  <footer class="site-footer" id="footer"></footer>
+  <!-- The whole portfolio in plain HTML. With JavaScript on, js/main.js renders the
+       interactive version (intro, doors, story timeline) into <main> instead. -->
+  <main id="main" tabindex="-1" class="plain">
 
-  <div class="float-bar" id="float-bar" aria-label="Quick contact">
+    <section id="home" class="plain-section plain-hero">
+      <img src="images/portrait.png" alt="Portrait of Tonny Bett" width="1206" height="942" class="plain-photo">
+      <div>
+        <p class="eyebrow">Full-Stack Software Developer · Nairobi, Kenya</p>
+        <h1>Hi, I'm Tonny Bett.</h1>
+        <p>I build web applications end to end: React interfaces, Python and Flask APIs, AI chatbots and trading technology. I founded <a href="https://mqtradepro.com/">MQTradePro</a>, built <a href="https://clotzhub.vercel.app/">Clotz Hub</a>, and I'm studying for a BSc in Software Development at KCA University.</p>
+        <p><a class="btn btn-dark" href="#contact-me">Hire me</a> <a class="btn btn-ghost" href="#projects">See my work</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="plain-section">
+      <h2>About me</h2>
+      <p>I'm a full-stack developer from Kenya who likes building software that real businesses and people use every day.</p>
+
+      <h3>Education and experience</h3>
+      <table class="plain-table">
+        <caption>My education and work, most recent first</caption>
+        <thead>
+          <tr><th scope="col">Where</th><th scope="col">What</th><th scope="col">Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>KCA University, Nairobi</td><td>BSc Software Development</td><td>Currently studying</td></tr>
+          <tr><td>MQTradePro</td><td>Founder &amp; Lead Software Engineer</td><td>Current</td></tr>
+          <tr><td>Imara Logic</td><td>Full-Stack Developer</td><td>Completed</td></tr>
+          <tr><td>Moringa School, Kenya</td><td>Software Engineering Programme</td><td>Completed</td></tr>
+        </tbody>
+      </table>
+
+      <h3>My journey so far</h3>
+      <ol>
+        <li>Trained in full-stack software engineering at Moringa School.</li>
+        <li>Built frontends, AI chatbots and WhatsApp automation at Imara Logic.</li>
+        <li>Founded MQTradePro, a subscription trading-signals platform.</li>
+        <li>Built Clotz Hub, a multi-store fashion marketplace with M-Pesa checkout.</li>
+      </ol>
+
+      <h3>Personal interests</h3>
+      <ul>
+        <li>Financial markets and algorithmic trading</li>
+        <li>Artificial intelligence and automation</li>
+        <li>Building products for Kenyan businesses</li>
+        <li>Learning new technologies and tools</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="plain-section">
+      <h2>Skills</h2>
+      <ul class="plain-chips">
+        <li>HTML5 &amp; CSS3</li>
+        <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
+        <li>React.js</li>
+        <li>Python</li>
+        <li>Flask &amp; REST APIs</li>
+        <li>SQL, PostgreSQL &amp; SQLite</li>
+        <li>Supabase</li>
+        <li>Git &amp; GitHub</li>
+        <li>AI tools (Claude, ChatGPT) &amp; chatbots</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="plain-section">
+      <h2>Projects</h2>
+      <div class="plain-grid">
+        <article class="plain-card">
+          <img src="images/work/clotzhub.jpg" alt="Clotz Hub home page" width="1200" height="750" loading="lazy">
+          <h3>Clotz Hub</h3>
+          <p>Kenya's verified fashion marketplace: shoppers browse clothing stores, fill one cart and pay with M-Pesa or cash. Built with React, TypeScript and Supabase.</p>
+          <p><a href="https://clotzhub.vercel.app/">Live site</a> · <a href="https://github.com/Bett-001/clothez-connect">Code</a></p>
+        </article>
+        <article class="plain-card">
+          <img src="images/work/mqtradepro.jpg" alt="MQTradePro home page" width="1200" height="750" loading="lazy">
+          <h3>MQTradePro</h3>
+          <p>A subscription platform for live trading signals, risk tools and strategies, which I founded and built end to end.</p>
+          <p><a href="https://mqtradepro.com/">Live site</a></p>
+        </article>
+        <article class="plain-card">
+          <img src="images/work/imara.jpg" alt="Imara Logic home page" width="1200" height="750" loading="lazy">
+          <h3>Imara Logic</h3>
+          <p>A shared WhatsApp inbox for teams, with AI chatbots that answer customers instantly through the WhatsApp Business API.</p>
+          <p><a href="https://www.imaralogic.co.ke/">Live site</a></p>
+        </article>
+        <article class="plain-card">
+          <img src="images/work/botbattlr.jpg" alt="Bot Battlr app" width="1200" height="750" loading="lazy">
+          <h3>Bot Battlr</h3>
+          <p>A React app where users build an army of bots from a live collection, using components, state and props.</p>
+          <p><a href="https://bot-battlr-project-red.vercel.app/">Live site</a></p>
+        </article>
+        <article class="plain-card">
+          <img src="images/work/jobfinder.jpg" alt="Job Finder app" width="1200" height="750" loading="lazy">
+          <h3>Job Finder</h3>
+          <p>A React job-matching app with profiles, job search and matches for job seekers and companies.</p>
+          <p><a href="https://capable-kulfi-724249.netlify.app/">Live site</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact-me" class="plain-section">
+      <h2>Contact me</h2>
+      <p>Email: <a href="mailto:tonnybett44@gmail.com">tonnybett44@gmail.com</a> · Phone: <a href="tel:+254797330653">+254 797 330 653</a></p>
+      <form class="plain-form" action="mailto:tonnybett44@gmail.com" method="post" enctype="text/plain">
+        <label for="cf-name">Your name</label>
+        <input id="cf-name" name="name" type="text" autocomplete="name" required>
+        <label for="cf-email">Your email</label>
+        <input id="cf-email" name="email" type="email" autocomplete="email" required>
+        <label for="cf-topic">What do you need?</label>
+        <select id="cf-topic" name="topic">
+          <option>A website or web app</option>
+          <option>A backend or API</option>
+          <option>AI chatbot or automation</option>
+          <option>Just a question</option>
+        </select>
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" required></textarea>
+        <button class="btn btn-dark" type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="wrap">
+      <p>© 2026 Tonny Bett · <a href="https://github.com/Bett-001">GitHub</a> · <a href="https://www.linkedin.com/in/tonny-bett-b8a52740b/">LinkedIn</a> · <a href="#home">Back to top</a></p>
+    </div>
+  </footer>
+
+  <div class="float-bar" id="float-bar">
     <span class="fb-label">Local time</span>
     <b data-clock-time>--:--</b>
     <button class="fb-hire" type="button" data-open-contact>Hire me <span aria-hidden="true">→</span></button>
