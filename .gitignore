@@ -11,3 +11,4 @@ CLAUDE.md
 # Editor / tooling
 .vscode/
 *.log
+_old_backups/

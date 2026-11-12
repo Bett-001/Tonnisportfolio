@@ -20,7 +20,7 @@ My personal portfolio as a full-stack software developer in Kenya. It's built wi
 
 ```
 index.html        page shell: header, nav, main, footer, dialogs
-css/styles.css    all styles: theme tokens, layout, sections, responsive rules
+style.css         all styles: theme tokens, layout, sections, responsive rules
 js/content.js     all text and data: identity, skills, projects, story, card
 js/main.js        routing, intro, flip-card, doors, story, contact form
 js/cord.js        the physics pull cord (light/dark switch)

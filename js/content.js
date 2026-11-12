@@ -25,12 +25,12 @@ window.SITE = {
   roles: ['Full-Stack Developer', 'React Developer', 'API Engineer', 'Automation Builder', 'Founder'],
 
   // Cut-out portrait (transparent PNG works best). Drop yours in /assets and
-  // change the path, e.g. 'assets/portrait.png'.
-  portrait: 'assets/portrait.png',
+  // change the path, e.g. 'images/portrait.png'.
+  portrait: 'images/portrait.png',
   // Dark-mode version: same photo with the gray background dimmed so it doesn't glow on the dark page.
-  portraitDark: 'assets/portrait-dark.png',
+  portraitDark: 'images/portrait-dark.png',
   // Colour photo with a wider soft fade of its background, revealed in a spotlight under the cursor ('' to turn off).
-  portraitReveal: 'assets/portrait-reveal.png',
+  portraitReveal: 'images/portrait-reveal.png',
   portraitAlt: 'Portrait of Tonny Bett',
 
   // ---- Section headings ----------------------------------------------------
@@ -48,7 +48,7 @@ window.SITE = {
   //   subtitle — small mono line under the title beside the door
   //   points   — the checklist beside the door (and on the skill page)
   //   projects — the stacked cards on the skill page. `image` = screenshot
-  //              shown inside the monitor (e.g. 'assets/bot-battlr.jpg').
+  //              shown inside the monitor (e.g. 'images/bot-battlr.jpg').
   skills: [
     {
       slug: 'frontend',
@@ -73,21 +73,21 @@ window.SITE = {
             'Typed end to end in TypeScript, with forms validated by React Hook Form and Zod',
           ],
           tags: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS', 'TanStack Query', 'M-Pesa'],
-          link: 'https://clotzhub.vercel.app/', code: 'https://github.com/Bett-001/clothez-connect', image: 'assets/work/clotzhub.jpg',
+          link: 'https://clotzhub.vercel.app/', code: 'https://github.com/Bett-001/clothez-connect', image: 'images/work/clotzhub.jpg',
         },
         {
           kind: 'React web app', title: 'Bot Battlr', subtitle: 'Battle-bot collection manager',
           desc: 'Users build their own army by enlisting, releasing or permanently removing bots from a live collection.',
           bullets: ['Reusable components for dynamic rendering', 'Data fetched from a JSON server', 'State and props for adding and removing bots'],
           tags: ['React', 'State management', 'JSON Server'],
-          link: 'https://bot-battlr-project-red.vercel.app/', image: 'assets/work/botbattlr.jpg',
+          link: 'https://bot-battlr-project-red.vercel.app/', image: 'images/work/botbattlr.jpg',
         },
         {
           kind: 'React web app', title: 'Job Finder App', subtitle: 'Job-matching platform',
           desc: 'Connects job seekers with employers through profiles, job postings and application management.',
           bullets: ['User and company dashboards', 'Job search and filtering', 'Application and posting state management'],
           tags: ['React', 'Dashboards', 'Search & filters'],
-          link: 'https://capable-kulfi-724249.netlify.app/', image: 'assets/work/jobfinder.jpg',
+          link: 'https://capable-kulfi-724249.netlify.app/', image: 'images/work/jobfinder.jpg',
         },
       ],
     },
@@ -115,7 +115,7 @@ window.SITE = {
           desc: 'Backend services and REST APIs powering a subscription-based trading platform.',
           bullets: ['Python/Flask services and REST APIs', 'Schemas for users, subscriptions and signal history', 'Testing, debugging and deployment'],
           tags: ['Python', 'Flask', 'SQL schema design'],
-          link: 'https://mqtradepro.com/', image: 'assets/work/mqtradepro.jpg',
+          link: 'https://mqtradepro.com/', image: 'images/work/mqtradepro.jpg',
         },
       ],
     },
@@ -136,7 +136,7 @@ window.SITE = {
           desc: 'Lets businesses manage customer conversations across WhatsApp, Facebook and Instagram while automating workflows and cutting response times.',
           bullets: ['Responsive frontend interfaces', 'Meta Business and WhatsApp integrations', 'AI chatbots and lead-capture automation'],
           tags: ['AI chatbots', 'WhatsApp API', 'Automation'],
-          link: 'https://www.imaralogic.co.ke/', image: 'assets/work/imara.jpg',
+          link: 'https://www.imaralogic.co.ke/', image: 'images/work/imara.jpg',
         },
       ],
     },
@@ -157,7 +157,7 @@ window.SITE = {
           desc: 'A subscription platform for traders: real-time signals, TradingView and NinjaTrader strategies, MetaTrader 5 integration, analytics and education.',
           bullets: ['Led technical development, product strategy and architecture', 'React dashboards backed by Flask APIs', 'MT5 integration, automated trade journaling and bot workflows'],
           tags: ['Founder', 'React', 'Flask', 'MT5'],
-          link: 'https://mqtradepro.com/', image: 'assets/work/mqtradepro.jpg',
+          link: 'https://mqtradepro.com/', image: 'images/work/mqtradepro.jpg',
         },
       ],
     },
@@ -236,7 +236,7 @@ window.SITE = {
     // TODO Tonny: change these numbers to whatever feels honest to you.
     card: {
       role: 'Full-Stack Software Developer',
-      photo: 'assets/card-photo.jpg',
+      photo: 'images/card-photo.jpg',
       stats: [
         { label: 'Frontend', value: 88 },
         { label: 'Backend & APIs', value: 85 },
