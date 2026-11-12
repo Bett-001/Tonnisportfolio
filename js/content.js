@@ -131,7 +131,7 @@ window.SITE = {
       blurb: 'AI chatbots and business automation.',
       lead: 'AI-powered tools that help businesses answer customers instantly and automate their workflows across WhatsApp, Facebook and Instagram.',
       points: ['AI-assisted development & prompt engineering', 'WhatsApp, Facebook & Instagram messaging', 'Meta Business integrations', 'AI chatbots for instant support', 'Lead capture workflows', 'Production deployment & upkeep'],
-      tools: ['AI coding assistants (Claude, ChatGPT)', 'Meta Business', 'WhatsApp automation', 'AI chatbots', 'JavaScript', 'Python'],
+      tools: ['AI-assisted development', 'Meta Business', 'WhatsApp automation', 'AI chatbots', 'JavaScript', 'Python'],
       projects: [
         {
           kind: 'AI & automation platform', title: 'Imara Logic', subtitle: 'Business automation for SMEs',
@@ -152,7 +152,7 @@ window.SITE = {
       blurb: 'Trading technology platforms.',
       lead: 'Founder and lead engineer of MQTradePro, a subscription trading platform combining signals, strategies, analytics and trader education.',
       points: ['Product strategy & architecture', 'Real-time trading signals', 'Pine Script & NinjaTrader strategies', 'MetaTrader 5 integration', 'Trade journaling & analytics'],
-      tools: ['React.js', 'Python', 'Flask', 'SQL', 'MetaTrader 5', 'TradingView Pine Script', 'NinjaTrader'],
+      tools: ['React.js', 'Python', 'Flask', 'SQL', 'C#', 'MetaTrader 5', 'TradingView Pine Script', 'NinjaTrader'],
       projects: [
         {
           kind: 'Founder · Lead engineer', title: 'MQTradePro', subtitle: 'Trading technology platform',
@@ -183,6 +183,19 @@ window.SITE = {
       ],
       tags: ['React', 'Python', 'Flask', 'SQL', 'MetaTrader 5', 'Pine Script'],
       link: { label: 'mqtradepro.com', href: 'https://mqtradepro.com/' },
+    },
+    {
+      year: '', period: '',
+      title: 'Freelance Trading Systems Developer', org: 'Upwork', type: 'Freelance · Verified profile',
+      summary: 'I help traders and businesses turn their trading ideas and strategies into reliable indicators, automated trading systems and custom trading tools.',
+      bullets: [
+        'Custom TradingView indicators and strategies in Pine Script.',
+        'Automated trading bots and strategies for NinjaTrader in C#.',
+        'Turn a client’s strategy rules into clean, testable code that runs in live markets.',
+        'Six client jobs completed for traders on Upwork.',
+      ],
+      tags: ['Pine Script', 'TradingView', 'C#', 'NinjaTrader', 'Trading bots'],
+      link: { label: 'Upwork profile', href: 'https://www.upwork.com/freelancers/~014edb9bfcbe9b999d' },
     },
     {
       year: '', period: '',
@@ -232,7 +245,7 @@ window.SITE = {
       { label: 'Platform founded', value: '1' },
     ],
     strengths: ['AI-assisted development', 'Problem solving', 'Team collaboration', 'Communication', 'Adaptability', 'Time management'],
-    tools: ['Python', 'JavaScript', 'React.js', 'AI tools (Claude, ChatGPT)', 'Flask', 'PostgreSQL', 'SQLite', 'Git & GitHub', 'Postman', 'Vercel', 'Netlify'],
+    tools: ['Python', 'JavaScript', 'React.js', 'AI tools & prompt engineering', 'Flask', 'PostgreSQL', 'SQLite', 'Git & GitHub', 'Postman', 'Vercel', 'Netlify'],
 
     // The 3D holo card (js/card.js). Stats are YOUR OWN 0–100 self-ratings:
     // TODO Tonny: change these numbers to whatever feels honest to you.
@@ -276,6 +289,7 @@ window.SITE = {
   socials: [
     { label: 'GitHub', href: 'https://github.com/Bett-001' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/tonny-bett-b8a52740b/' },
+    { label: 'Upwork', href: 'https://www.upwork.com/freelancers/~014edb9bfcbe9b999d' },
   ],
 
   // ---- Privacy & credits page ----------------------------------------------

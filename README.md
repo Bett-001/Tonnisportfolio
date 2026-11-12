@@ -88,6 +88,5 @@ Open the folder in VS Code, right-click `index.html` and choose **Open with Live
 
 - **Fonts:** Onest, JetBrains Mono and EB Garamond (SIL Open Font License), served by Google Fonts.
 - **Design inspiration:** the layout and interaction ideas (doors, pull cord, flip-card roles, ability card) are inspired by [therishithakor.com](https://therishithakor.com) by Rishi Thakor. All the code here is written from scratch, and all text and photos are my own.
-- **AI assistance:** I built this site with Claude (Anthropic) as a coding assistant. I directed the design, made the decisions and reviewed and tested the work.
 
 © 2026 Tonny Bett
