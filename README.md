@@ -5,8 +5,6 @@ My personal portfolio website as a full-stack software developer in Kenya. It in
 - **Live site (GitHub Pages):** https://bett-001.github.io/personal-portfolio/
 - **Mirror (Vercel):** https://tonnisportfolio.vercel.app/
 
-Built for **CSN 1101: Web Technologies and Internet Applications, CAT 2**, KCA University.
-
 ## Sections
 
 | Section | What it contains |
