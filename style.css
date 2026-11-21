@@ -809,3 +809,9 @@ html.intro { overflow: hidden; }
 .prof-bar span { display: block; height: 100%; border-radius: 6px; background: var(--door); }
 .prof-item p { color: color-mix(in srgb, var(--ink) 78%, transparent); font-size: 15.5px; line-height: 1.5; margin-bottom: 14px; }
 .prof-item .checks li { font-size: 14.5px; }
+
+/* Mobile menu open: the scrolled header's backdrop-filter would trap the fixed,
+   full-screen menu inside the header box (so the page showed through it), and
+   the cord would hang over the menu. Turn both off while the menu is open. */
+html.nav-open .site-header { -webkit-backdrop-filter: none; backdrop-filter: none; background: var(--bg); }
+html.nav-open .cord, html.nav-open .back-doors, html.nav-open .float-bar { opacity: 0; pointer-events: none; }
