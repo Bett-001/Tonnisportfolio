@@ -795,3 +795,17 @@ html.intro { overflow: hidden; }
 .plain-form button { margin-top: 12px; justify-self: start; }
 .story-interests { margin-top: 18px; max-width: 40ch; font-size: 15px; line-height: 1.6; color: color-mix(in srgb, var(--ink) 72%, transparent); }
 .story-interests .mono { display: block; margin-bottom: 4px; }
+
+/* ---- Proficiency section on skill pages ---------------------------------- */
+.prof { margin: 0 0 clamp(50px, 7vw, 90px); }
+.prof h2 { font-size: clamp(26px, 3vw, 36px); margin-bottom: 22px; }
+.prof-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.prof-item { padding: 26px; border-radius: 22px; background: var(--panel); box-shadow: inset 0 0 0 1px var(--line); }
+.prof-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.prof-top h3 { font-size: 19px; letter-spacing: -.02em; }
+.prof-level { font-family: var(--mono); font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--door); font-weight: 700; white-space: nowrap; }
+[data-theme='dark'] .prof-level { color: color-mix(in srgb, var(--door) 55%, #fff); }
+.prof-bar { height: 6px; margin: 14px 0 16px; border-radius: 6px; background: var(--line); overflow: hidden; }
+.prof-bar span { display: block; height: 100%; border-radius: 6px; background: var(--door); }
+.prof-item p { color: color-mix(in srgb, var(--ink) 78%, transparent); font-size: 15.5px; line-height: 1.5; margin-bottom: 14px; }
+.prof-item .checks li { font-size: 14.5px; }

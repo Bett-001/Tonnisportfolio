@@ -103,7 +103,7 @@ window.SITE = {
       blurb: 'RESTful APIs with Flask.',
       lead: 'RESTful APIs and relational databases built with Python and Flask, designed to be modular, tested and easy to extend.',
       points: ['RESTful API design with Flask', 'Relational data models', 'Full CRUD operations', 'Endpoint testing with Postman', 'Modular, clean architecture'],
-      tools: ['Python', 'Flask', 'SQLite', 'PostgreSQL', 'Postman', 'Git & GitHub'],
+      tools: ['Python', 'Flask', 'PHP', 'SQLite', 'PostgreSQL', 'MySQL', 'Postman', 'Git & GitHub'],
       projects: [
         {
           kind: 'REST API', title: 'Superheroes API', subtitle: 'Flask backend application',
@@ -144,15 +144,33 @@ window.SITE = {
     },
     {
       slug: 'trading-tech',
-      title: 'Founder & Engineer',
+      title: 'Trading Systems Engineer',
       nav: 'Trading Tech',
-      plate: 'Founder & Engineer',
+      plate: 'Trading Systems Engineer',
       color: '#a4552c',
-      subtitle: 'Building MQTradePro end to end',
-      blurb: 'Trading technology platforms.',
-      lead: 'Founder and lead engineer of MQTradePro, a subscription trading platform combining signals, strategies, analytics and trader education.',
-      points: ['Product strategy & architecture', 'Real-time trading signals', 'Pine Script & NinjaTrader strategies', 'MetaTrader 5 integration', 'Trade journaling & analytics'],
-      tools: ['React.js', 'Python', 'Flask', 'SQL', 'C#', 'MetaTrader 5', 'TradingView Pine Script', 'NinjaTrader'],
+      subtitle: 'TradingView & NinjaTrader expert',
+      blurb: 'Trading indicators, strategies and automated systems.',
+      lead: 'I turn trading ideas into reliable code: custom TradingView indicators and strategies in Pine Script, automated NinjaTrader strategies and indicators in C#, and the platforms that deliver them, like MQTradePro, which I founded.',
+      points: ['Custom TradingView indicators & strategies', 'Automated NinjaTrader strategies in C#', 'Backtesting, optimisation & live alerts', 'Risk management & position sizing', 'MetaTrader 5 & exchange API integration', 'Founder of MQTradePro'],
+      tools: ['TradingView Pine Script', 'NinjaTrader 8 (NinjaScript)', 'C#', 'MetaTrader 5', 'Python', 'React.js', 'Flask', 'SQL'],
+      // Self-assessed levels (value = bar length, 0–100). TODO Tonny: adjust if needed.
+      proficiency: [
+        {
+          name: 'TradingView · Pine Script', level: 'Expert', value: 95,
+          summary: 'I build TradingView tools that traders rely on every day, from a client’s rough idea to a published, tested script.',
+          skills: ['Custom indicators: overlays, oscillators, multi-timeframe and market-structure tools', 'Strategies with entries, exits, stop-loss, take-profit and position sizing', 'Backtesting and tuning with the Strategy Tester', 'Alerts and webhooks for automated execution', 'Invite-only and protected scripts for paying users'],
+        },
+        {
+          name: 'NinjaTrader 8 · NinjaScript (C#)', level: 'Expert', value: 92,
+          summary: 'I write automated strategies and custom indicators for NinjaTrader 8 in C#, built to run safely in live futures markets.',
+          skills: ['Automated strategies with full order and risk management', 'Custom indicators and chart drawing tools', 'Backtesting and optimisation in the Strategy Analyzer', 'Testing on Market Replay before going live', 'Clean, documented C# that clients can maintain'],
+        },
+        {
+          name: 'MetaTrader 5 & trading automation', level: 'Advanced', value: 82,
+          summary: 'I connect trading logic to platforms and exchanges, and automate the workflow around it.',
+          skills: ['MetaTrader 5 integration and trade journaling', 'Python trading bots on exchange APIs (e.g. Deribit options)', 'Signal delivery via Telegram and web dashboards'],
+        },
+      ],
       projects: [
         {
           kind: 'Founder · Lead engineer', title: 'MQTradePro', subtitle: 'Trading technology platform',

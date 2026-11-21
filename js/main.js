@@ -251,6 +251,18 @@
           <h1 class="skill-title">${esc(s.nav || s.title)}</h1>
           <p class="lead">${esc(s.lead || s.blurb)}</p>
         </header>
+        ${(s.proficiency || []).length ? `
+        <section class="prof reveal" aria-labelledby="prof-h">
+          <h2 id="prof-h">Proficiency</h2>
+          <div class="prof-grid">${s.proficiency.map((p) => `
+            <article class="prof-item">
+              <div class="prof-top"><h3>${esc(p.name)}</h3><span class="prof-level">${esc(p.level)}</span></div>
+              <div class="prof-bar" role="img" aria-label="${esc(p.name)}: ${esc(p.level)}"><span style="width:${Number(p.value) || 0}%"></span></div>
+              <p>${esc(p.summary)}</p>
+              ${(p.skills || []).length ? `<ul class="checks">${p.skills.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}
+            </article>`).join('')}
+          </div>
+        </section>` : ''}
         <div class="pcards">${(s.projects || []).map(card).join('')}</div>
         <div class="cols">
           <div class="reveal"><h2>What I do</h2><ul class="checks big">${(s.points || []).map((p) => `<li>${esc(p)}</li>`).join('')}</ul></div>
