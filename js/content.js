@@ -243,11 +243,11 @@ window.SITE = {
     },
     {
       year: '', period: '',
-      title: 'BSc Software Development', org: 'KCA University, Nairobi', type: 'Degree · Currently studying',
-      summary: 'Studying for a degree in software development while building real products.',
+      title: 'BSc Software Development', org: 'KCA University, Nairobi', type: 'Degree',
+      summary: 'Studied software development, covering programming, systems analysis and software engineering.',
       bullets: [
         'Coursework in programming, systems analysis and software engineering.',
-        'Current unit: Web Technologies and Internet Applications (HTML, CSS, Git/GitHub and web publishing).',
+        'Web technologies and internet applications: HTML, CSS, Git/GitHub and web publishing.',
       ],
       tags: ['Software engineering', 'Web technologies'],
     },
